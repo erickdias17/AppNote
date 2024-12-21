@@ -1,0 +1,75 @@
+/* Editor */
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+}
+
+.editor-header button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.editor-header button#backToHome {
+    background-color: #f44336; /* Cor vermelha para botão de voltar */
+}
+
+.editor-header button:hover {
+    opacity: 0.9;
+}
+
+.editor-main {
+    height: calc(100vh - 60px); /* Altura da tela menos o header */
+    padding: 20px;
+}
+
+#noteContent {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .editor-header {
+        flex-wrap: nowrap; /* Força os itens a ficarem na mesma linha */
+        padding: 5px 10px;
+    }
+
+    .editor-header h1 {
+        font-size: 1.2rem; /* Reduz tamanho do título */
+    }
+
+    .editor-header button {
+        font-size: 0.9rem; /* Reduz tamanho dos botões */
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .editor-header {
+        padding: 5px; /* Reduz padding geral */
+    }
+
+    .editor-header h1 {
+        font-size: 1rem; /* Tamanho menor para o título */
+    }
+
+    .editor-header button {
+        font-size: 0.8rem; /* Reduz tamanho dos botões */
+        padding: 6px 8px;
+    }
+}

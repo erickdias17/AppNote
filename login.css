@@ -1,0 +1,199 @@
+body{
+    background: black;
+}
+
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255 , 255 , 0.15);
+        backdrop-filter: blur(15px);
+    }
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-box {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.submit {
+    background-color: #6c757d;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.submit:hover {
+    background-color: #343a40;
+}
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.google {
+    background-color: #fff;
+    color: #db4437;
+}
+.apple {
+    background-color: #fff;
+    color: #000;
+}
+/* Estilo Geral do Formulário de Login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto; /* Centraliza o formulário na tela */
+    text-align: center;
+}
+
+.login-container header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container .input-box {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-container .input-field {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .submit {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-container .submit:hover {
+    background-color: #45a049;
+}
+
+/* Link "Esqueci minha senha" */
+.login-container .forgot-password {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.login-container .forgot-password a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Botões de Login Social */
+.login-container .social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.login-container .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .social-button i {
+    margin-right: 10px;
+}
+
+.login-container .social-button.google {
+    color: #db4437;
+    border-color: #db4437;
+}
+
+.login-container .social-button.google:hover {
+    background-color: rgba(219, 68, 55, 0.1);
+}
+
+.login-container .social-button.apple {
+    color: #333;
+    border-color: #333;
+}
+
+.login-container .social-button.apple:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Link de Alternância de Login e Registro */
+.login-container .switch-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-container .switch-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container .switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .login-container header {
+        font-size: 1.5rem;
+    }
+
+    .login-container .input-field,
+    .login-container .submit,
+    .login-container .social-button {
+        font-size: 0.9rem;
+    }
+} 

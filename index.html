@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPnote</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>APPnote</h1>
+        </div>
+        <ul class="menu">
+            <li id="menu-home"><i class="fa-solid fa-house"></i> Página Inicial</li>
+            <li id="menu-favorites"><i class="fa-regular fa-star"></i> Favoritos</li>
+            <ul id="favorites-list" class="submenu"></ul> <!-- Lista de Favoritos -->
+            <li id="menu-recent"><i class="fa-solid fa-clock-rotate-left"></i> Recentes</li>
+        </ul>
+        
+        <div class="bottom-menu">
+            <ul>
+                <li id="menu-trash"><i class="fa-regular fa-trash-can"></i> Lixeira</li>
+                <li id="menu-settings"><i class="fa-solid fa-gear"></i> Configurações</li>
+                <li id="menu-help"><i class="fa-solid fa-circle-question"></i> Ajuda</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Área Principal -->
+    <main class="content">
+        <!-- Barra de Pesquisa -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Pesquisar" class="search-input" id="searchInput" autocomplete="off">
+            </div>
+            <button class="add-folder-btn" id="addFolderBtn">
+                <i class="fa-solid fa-folder-plus"></i> Adicionar Pasta
+            </button>
+        </header>
+
+        <!-- Pastas -->
+        <section class="folders">
+            <h2 class="section-title">Pastas</h2>
+            <div class="folder-grid" id="folderGrid">
+                
+            </div>
+            
+            
+            <section class="notes" id="notesSection" style="display: none;">
+                <h2 class="section-title">Notas</h2>
+                <div class="note-grid">
+                    <div class="note-item add-note-item">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </section>
+            
+    </main>
+</body>
+</html>
